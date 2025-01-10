@@ -1,71 +1,93 @@
-# KNN Model for Classification
-
-This repository contains a pre-trained K-Nearest Neighbors (KNN) classification model. The model can be used to classify data based on features. Below are the instructions to use the model.
+Berikut adalah template **README.md** untuk repository-mu yang berisi berbagai project dan model:
 
 ---
 
-## 📂 Files in This Repository
-- **`knn_model.pkl`**: The pre-trained KNN model serialized with `joblib`.
-- **`requirements.txt`**: The list of dependencies required to use the model.
-- **`example_usage.py`**: A Python script that demonstrates how to load and use the model for predictions.
+# Machine Learning Projects Repository
+
+This repository contains various machine learning projects, including **Drug Classification** and **Crypto Market Analysis**. Each project has its own datasets, trained models, and Jupyter Notebooks for training and evaluation. You can choose which project to use based on your needs.
 
 ---
 
-## 🛠️ Requirements
-To use this project, make sure you have the following installed:
-- Python 3.7 or above
-- Required libraries listed in `requirements.txt`
+## 📂 Repository Structure
 
-You can install the dependencies with:
-```bash
-pip install -r requirements.txt
+```
+├── dataset/          # Folder containing datasets for each project
+├── model/            # Folder containing trained models in `.pkl` format
+├── drug_classification/  
+│   ├── drug_classification.ipynb  # Jupyter Notebook for Drug Classification
+│   └── README.md                  # Detailed instructions for this project
+├── crypto_analyst/
+│   ├── crypto_analyst.ipynb       # Jupyter Notebook for Crypto Market Analysis
+│   └── README.md                  # Detailed instructions for this project
+├── requirements.txt  # List of dependencies
+└── README.md         # This file
 ```
 
 ---
 
-## 🚀 How to Use the Model
+## 🚀 Projects Overview
 
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-   ```
+### 1. **Drug Classification**
+- **Description**: Classify drugs based on specific features.
+- **Files**:
+  - `drug_classification/klasifikasi_obat.ipynb`: Jupyter Notebook for training, evaluation, and analysis.
+  - `model/knn_klasifikasiObt.pkl`: Pre-trained KNN model for drug classification.
+  - `dataset/drug200.csv`: Dataset used for training and testing.
 
-2. **Load the model in your Python script**:
-   Here's an example of how to use the pre-trained model:
-   ```python
-   import joblib
+- **How to Use**:
+  - Run the Jupyter Notebook: `drug_classification/klasifikasi_obat.ipynb`.
+  - Use the pre-trained model:
+    ```python
+    import joblib
 
-   # Load the model
-   model = joblib.load('knn_klasifikasiObt.pkl')
+    # Load model
+    model = joblib.load('model/knn_klasifikasiObt.pkl')
 
-   # Input data (example)
-   testing = {'Age': [35],
+    # Input data (example)
+    testing = {'Age': [35],
           'Sex': [1],
           'BP': [2],
           'Cholesterol': [1],
           'Na_to_K': [4.5]}
 
-   # Make a prediction
-   prediction = model.predict(testing)
-
-   print(f"Predicted class: {prediction}")
-   ```
-
-3. **Run the example script**:
-   To see the model in action, run the provided example script:
-   ```bash
-   python example_usage.py
-   ```
+    # Make prediction
+    prediction = model.predict(testing)
+    print(f"Predicted Drug: {prediction}")
+    ```
 
 ---
 
-## 📊 Model Details
-- **Algorithm**: K-Nearest Neighbors (KNN)
-- **Hyperparameters**: `n_neighbors=3`
-- **Accuracy**: 77%
+### 2. **Crypto Market Analysis**
+- **Description**: Perform market analysis and generate trading signals for Bitcoin using technical indicators.
+- **Files**:
+  - `crypto_analyst/crypto_analyst.ipynb`: Jupyter Notebook for market analysis and visualization.
+  - `dataset/crypto_data.csv`: Historical crypto market data.
 
-improve the accuracy for more datasets
+- **How to Use**:
+  - Run the Jupyter Notebook: `crypto_analyst/crypto_analyst.ipynb`.
+  - Explore trading signals, RSI, Bollinger Bands, and MACD indicators.
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/pikupik/machine-learning.git
+   cd your-repo
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Navigate to the project folder and explore its notebooks or use pre-trained models.
+
+---
+
+## 📊 Pre-trained Models
+All pre-trained models are stored in the `model/` folder. Use them directly in your scripts without retraining. 
 
 ---
 
