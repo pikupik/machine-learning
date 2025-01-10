@@ -31,18 +31,6 @@
 
 ---
 
-### 2. **Crypto Market Analysis**
-- **Description**: Perform market analysis and generate trading signals for Bitcoin using technical indicators.
-- **Files**:
-  - `crypto_analyst/crypto_analyst.ipynb`: Jupyter Notebook for market analysis and visualization.
-  - `dataset/crypto_data.csv`: Historical crypto market data.
-
-- **How to Use**:
-  - Run the Jupyter Notebook: `crypto_analyst/crypto_analyst.ipynb`.
-  - Explore trading signals, RSI, Bollinger Bands, and MACD indicators.
-
----
-
 ## 🛠️ Setup Instructions
 
 1. Clone this repository:
