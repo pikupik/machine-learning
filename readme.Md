@@ -1,7 +1,3 @@
-Berikut adalah template **README.md** untuk repository-mu yang berisi berbagai project dan model:
-
----
-
 # Machine Learning Projects Repository
 
 This repository contains various machine learning projects, including **Drug Classification** and **Crypto Market Analysis**. Each project has its own datasets, trained models, and Jupyter Notebooks for training and evaluation. You can choose which project to use based on your needs.
