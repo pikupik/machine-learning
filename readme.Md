@@ -1,24 +1,6 @@
 # Machine Learning Projects Repository
 
 This repository contains various machine learning projects, including **Drug Classification** and **Crypto Market Analysis**. Each project has its own datasets, trained models, and Jupyter Notebooks for training and evaluation. You can choose which project to use based on your needs.
-
----
-
-## 📂 Repository Structure
-
-```
-├── dataset/          # Folder containing datasets for each project
-├── model/            # Folder containing trained models in `.pkl` format
-├── drug_classification/  
-│   ├── drug_classification.ipynb  # Jupyter Notebook for Drug Classification
-│   └── README.md                  # Detailed instructions for this project
-├── crypto_analyst/
-│   ├── crypto_analyst.ipynb       # Jupyter Notebook for Crypto Market Analysis
-│   └── README.md                  # Detailed instructions for this project
-├── requirements.txt  # List of dependencies
-└── README.md         # This file
-```
-
 ---
 
 ## 🚀 Projects Overview
