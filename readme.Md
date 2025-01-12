@@ -1,30 +1,4 @@
-Berikut adalah template **README.md** untuk repository-mu yang berisi berbagai project dan model:
-
----
-
 # Machine Learning Projects Repository
-
-This repository contains various machine learning projects, including **Drug Classification** and **Crypto Market Analysis**. Each project has its own datasets, trained models, and Jupyter Notebooks for training and evaluation. You can choose which project to use based on your needs.
-
----
-
-## 📂 Repository Structure
-
-```
-├── dataset/          # Folder containing datasets for each project
-├── model/            # Folder containing trained models in `.pkl` format
-├── drug_classification/  
-│   ├── drug_classification.ipynb  # Jupyter Notebook for Drug Classification
-│   └── README.md                  # Detailed instructions for this project
-├── crypto_analyst/
-│   ├── crypto_analyst.ipynb       # Jupyter Notebook for Crypto Market Analysis
-│   └── README.md                  # Detailed instructions for this project
-├── requirements.txt  # List of dependencies
-└── README.md         # This file
-```
-
----
-
 ## 🚀 Projects Overview
 
 ### 1. **Drug Classification**
@@ -57,18 +31,6 @@ This repository contains various machine learning projects, including **Drug Cla
 
 ---
 
-### 2. **Crypto Market Analysis**
-- **Description**: Perform market analysis and generate trading signals for Bitcoin using technical indicators.
-- **Files**:
-  - `crypto_analyst/crypto_analyst.ipynb`: Jupyter Notebook for market analysis and visualization.
-  - `dataset/crypto_data.csv`: Historical crypto market data.
-
-- **How to Use**:
-  - Run the Jupyter Notebook: `crypto_analyst/crypto_analyst.ipynb`.
-  - Explore trading signals, RSI, Bollinger Bands, and MACD indicators.
-
----
-
 ## 🛠️ Setup Instructions
 
 1. Clone this repository:
@@ -83,6 +45,16 @@ This repository contains various machine learning projects, including **Drug Cla
    ```
 
 3. Navigate to the project folder and explore its notebooks or use pre-trained models.
+
+4. Use models
+# Muat model
+loaded_model = joblib.load("model_rf.joblib")
+print("Model berhasil dimuat kembali")
+
+# Contoh prediksi
+predictions = loaded_model.predict(X_test)
+print(predictions)
+
 
 ---
 
