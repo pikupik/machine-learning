@@ -1,67 +1,45 @@
-# Machine Learning Projects Repository
-## 🚀 Projects Overview
+# Repositori Proyek Machine Learning
+## 🚀 Tinjauan Proyek
 
-### 1. **Drug Classification**
-- **Description**: Classify drugs based on specific features.
-- **Files**:
-  - `drug_classification/klasifikasi_obat.ipynb`: Jupyter Notebook for training, evaluation, and analysis.
-  - `model/knn_klasifikasiObt.pkl`: Pre-trained KNN model for drug classification.
-  - `dataset/drug200.csv`: Dataset used for training and testing.
+### 1. **Klasifikasi Obat (KNN)**
+- **Deskripsi**: Mengklasifikasikan obat berdasarkan fitur-fitur tertentu.
 
-- **How to Use**:
-  - Run the Jupyter Notebook: `drug_classification/klasifikasi_obat.ipynb`.
-  - Use the pre-trained model:
-    ```python
-    import joblib
+### 2. **Pemeriksaan Email Spam (LogisticRegression)**
+- **Deskripsi**: Mengklasifikasikan email spam berdasarkan fitur-fitur tertentu.
 
-    # Load model
-    model = joblib.load('model/knn_klasifikasiObt.pkl')
-
-    # Input data (example)
-    testing = {'Age': [35],
-          'Sex': [1],
-          'BP': [2],
-          'Cholesterol': [1],
-          'Na_to_K': [4.5]}
-
-    # Make prediction
-    prediction = model.predict(testing)
-    print(f"Predicted Drug: {prediction}")
-    ```
+### 3. **Diabetes (SVM)**
+- **Deskripsi**: Mengklasifikasikan diabetes berdasarkan fitur-fitur tertentu.
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠️ Petunjuk Setup
 
-1. Clone this repository:
+1. Clone repositori ini:
    ```bash
    git clone https://github.com/pikupik/machine-learning.git
-   cd your-repo
+   cd nama-repo-anda
    ```
 
-2. Install dependencies:
+2. Pasang dependensi:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Navigate to the project folder and explore its notebooks or use pre-trained models.
+3. Akses folder proyek dan jelajahi notebooknya atau gunakan model-model yang sudah dilatih sebelumnya.
 
-4. Use models
+4. Gunakan model-model
 # Muat model
 loaded_model = joblib.load("model_rf.joblib")
-print("Model berhasil dimuat kembali")
+print("Model berhasil dimuat")
 
 # Contoh prediksi
 predictions = loaded_model.predict(X_test)
 print(predictions)
 
-
 ---
 
-## 📊 Pre-trained Models
-All pre-trained models are stored in the `model/` folder. Use them directly in your scripts without retraining. 
+## 📊 Model-model Pre-trained
+Semua model pre-trained tersimpan di folder `model/`. Gunakan langsung dalam skrip Anda tanpa perlu pelatihan ulang.
 
----
-
-## 📝 License
+## 📝 Lisensi
 MIT License
